@@ -4,3 +4,69 @@
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
 }
+
+:root{
+    --corMentaGlacial: #98FFC9;
+    --corCinzaArdosia: #333940;
+    --corBrancoAlgodao: #EDF2F4;
+    --corCinzaNevoa: #8D99AE;
+}
+.interface{
+    max-width: 1380px;
+    padding: 0 4%;
+    margin: 0 auto;
+}
+
+button{
+    background-color: transparent;
+    border: 2px solid var(--corBrancoAlgodao);
+    border-radius: 8px;
+    color: var(--corBrancoAlgodao);
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: .5s;
+}
+
+button:hover{
+    background-color: var(--corMentaGlacial);
+    color: var(--corCinzaArdosia);
+}
+
+/* ESTILO DO CABEÇALHO */
+header{
+    background-color: var(--corMentaGlacial);
+    padding: 16px 0;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logotipo-cabecalho img{
+    max-width: 200px;
+}
+
+header nav.menu-desktop ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 56px;
+}
+
+header nav.menu-desktop a{
+    color: var(--corBrancoAlgodao);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: .5s;
+}
+
+header nav.menu-desktop a:hover{
+    color: var(--corMentaGlacial);
+}
+
+header nav.menu-desktop button{
+    width: 144px;
+    height: 48px;
+}
