@@ -55,8 +55,14 @@ header .abellucas-contato button{
     border: 0;
     border-radius: 30px;
     cursor: pointer;
+    color: #0D2029;
 }
 
 header .abellucas-contato button:hover{
     box-shadow: 0px 0px 8px #FF6B00;
+}
+
+/* ESTILO DO TOPO DO SITE */
+section.topo-do-site{
+    padding: 40px 4%;
 }
