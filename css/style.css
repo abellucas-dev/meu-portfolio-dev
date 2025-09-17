@@ -34,8 +34,10 @@ button:hover{
 
 /* ESTILO DO CABEÇALHO */
 header{
-    background-color: var(--corMentaGlacial);
+    background-color: transparent;
     padding: 16px 0;
+    position: fixed;
+    width: 100%;
 }
 
 header > .interface{
@@ -68,5 +70,45 @@ header nav.menu-desktop a:hover{
 
 header nav.menu-desktop button{
     width: 144px;
+    height: 48px;
+}
+
+/* ESTILO DO INICIO */
+section.inicio{
+    background-image: linear-gradient(to left, var(--corCinzaArdosia) 70%, var(--corMentaGlacial) 30%);
+    padding-top: 144px;
+}
+
+.inicio > .interface{
+    display: flex;
+    align-items: center;
+    gap: 120px;
+}
+
+.inicio .img-inicio{
+    line-height: 0;
+}
+.inicio .txt-inicio h1{
+    font-size: 3rem;
+    color: var(--corBrancoAlgodao);
+    font-weight: 300;
+}
+
+.inicio .txt-inicio h1 span{
+    color: var(--corMentaGlacial);
+    display: block;
+    font-weight: 800;
+    font-size: 4rem;
+}
+
+.inicio .txt-inicio p{
+    color: var(--corCinzaNevoa);
+    line-height: 1.6;
+    font-size: 1.2rem;
+    margin: 24px 0;
+}
+
+.inicio .txt-inicio button{
+    width: 200px;
     height: 48px;
 }
