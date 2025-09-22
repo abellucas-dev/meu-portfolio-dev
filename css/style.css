@@ -11,6 +11,11 @@
     --corVerdeClaroPastel: #D1FAE5;
     --corBrancoSuave: #F1F5F9;
     --corVerdeAcinzentado: #809690;
+    --corVerdeFloresta: #1A433A;
+}
+
+body{
+    background-color: var(--corVerdeFloresta);
 }
 .interface{
     max-width: 1380px;
@@ -31,6 +36,15 @@ button{
 button:hover{
     background-color: var(--corVerdeEsmeralda);
     color: var(--corVerdeEscuroProfundo);
+}
+
+h1.titulo-section{
+    font-size: 4rem;
+    color: var(--corVerdeClaroPastel);
+}
+
+h1.titulo-section span{
+    color: var(--corVerdeEsmeralda);
 }
 
 /* ESTILO DO CABEÇALHO */
@@ -112,4 +126,32 @@ section.inicio{
 .inicio .txt-inicio button{
     width: 200px;
     height: 48px;
+}
+
+/* ESTILO SOBRE-MIM */
+
+section.sobre-mim{
+    padding: 80px 0;
+
+}
+
+.sobre-mim > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 96px;
+}
+
+.sobre-mim .txt-sobre p{
+    color: var(--corVerdeAcinzentado);
+    text-align: justify;
+    line-height: 1.6;
+    margin: 24px 0;
+}
+
+.sobre-mim .abellucas-redes button{
+    width: 56px;
+    height: 56px;
+    font-size: 24px;
+    margin-right: 8px;
 }
